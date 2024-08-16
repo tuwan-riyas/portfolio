@@ -1,44 +1,343 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
-<title>3d animation using pure CSS3</title>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio - Tuwan Riyas</title>
 </head>
+
 <body>
-<div id="wrapper">
-	<h1>3d animation using pure CSS3<small>Movie Posters Example</small></h1>
-	<h2><a href="http://www.marcofolio.net/" title="Visit Marcofolio.net">Marcofolio.net</a></h2>
-	<div id="content">
-		<p class="info">Here's an example of pretty powerful CSS3 animation and 3d effects. Using the <code>perspective</code>, <code>transform</code> and <code>transition</code> properties, we can create a 3d animation effect. Simply hover over the movie posters below to see the effect in it's full glory.</p>
-		<p class="info">Just make sure you're running the latest version of a <code>-webkit</code> based browser (Apple Safari or Google Chrome) to see the effect. If you don't have any of those browers, visit the article to see a video of the effect.</p>
-		<ul id="movieposters">
-			<li>
-				<img src="images/01_iron_man_2.jpg" alt="Iron Man 2" />
-				<div class="movieinfo">
-					<h3>Iron Man 2</h3>
-					<p>With the world now aware of his dual life as the armored superhero Iron Man, billionaire inventor Tony...</p>
-					<a href="http://www.imdb.com/title/tt1228705/" title="Iron Man 2">More info</a>
-				</div>
-			</li>
-			<li>
-				<img src="images/02_the_last_airbender.jpg" alt="The Last Airbender" />
-				<div class="movieinfo">
-					<h3>The Last Airbender</h3>
-					<p>The story follows the adventures of Aang, a young successor to a long line of Avatars, who must put his...</p>
-					<a href="http://www.imdb.com/title/tt0938283/" title="Iron Man 2">More info</a>
-				</div>
-			</li>
-			<li>
-				<img src="images/03_tron_legacy.jpg" alt="Tron Legacy" />
-				<div class="movieinfo">
-					<h3>Tron Legacy</h3>
-					<p>Sam Flynn, the tech-savvy 27-year-old son of Kevin Flynn, looks into his father's disappearance and finds...</p>
-					<a href="http://www.imdb.com/title/tt1104001/" title="Tron Legacy">More info</a>
-				</div>
-			</li>
-		</ul>
-	</div>
-</div>
+
+    <!-- Header design -->
+    <header>
+        <ul class="navlist">
+            <li>
+                <a href="#home" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#service">Experience</a>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact">Contact Me</a>
+            </li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- Home section design -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="two">My Name is</span>
+            </div>
+            <h1>Tuwan Riyas</h1>
+            <h3>Senior UI/UX
+                <span>Engineer</span>
+            </h3>
+            <p>Strong user experience (UX) design skills for user interface (UI) in user research
+              <br>and interaction design gained through various domains
+            </p>
+
+            <div class="main-but">
+                <a href="images/cv.pdf" download class="btn">Download CV</a>
+                <ul>
+                    <a href="https://www.linkedin.com/in/tuwan-riyas-67a60023/" target="_blank">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="">
+                      <i class='bx bxl-github'></i>
+                  </a>
+                  <a href="https://www.facebook.com/tuwan.saleem">
+                      <i class='bx bxl-facebook'></i>
+                  </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section design -->
+    <section class="about" id="about">
+        <div class="abot-text">
+            <h2>About
+                <span>Me</span>
+            </h2>
+            <h4>Senior UI/UX Engineer</h4>
+            <p>Strong user experience (UX) design skills for user interface (UI) in user research and 
+              interaction design gained through various domains such as logistics, telecommunication, 
+              finance, tourism so on, as well as working with a wide range of PC applications in different 
+              platform in ASP.Net, Java and PHP.</p>
+
+
+            <div class="tab-titles">
+                <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                <p class="tab-link" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <div class="skills">
+                        <li>
+
+                            <h2>UI/UX Design</h2>
+                            <div class="progress-bar">
+                                <div class="ux">
+                                    <span class="c1">86%</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+
+                            <h2>Web Development</h2>
+                            <div class="progress-bar">
+                                <div class="dev">
+                                    <span class="c1">80%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+
+                            <h2>Graphic Design</h2>
+                            <div class="progress-bar">
+                                <div class="graphics">
+                                    <span class="c1">70%</span>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li>
+                        <span>Specialist UI Engineer (Currently)</span>
+                        <br>Scicom Lanka (Pvt) Ltd</li>
+                    <li>
+                        <span>UI Engineer</span>
+                        <br>eves_ Information Technology Lanka (Pvt) Ltd</li>
+                    <li>
+                        <span>UI Engineer</span>
+                        <br>Senit Technology (Pvt) Ltd
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li>
+                        <span>Certificate in Computer Program Operating Course</span>
+                        <br>Sri Lanka Vocational Training Authority</li>
+                    <li>
+                        <span>English Course</span>
+                        <br>Sri Jinaratana Academy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="abot-text">
+            <h4>Skills and Straight</h4>
+            <div class="skills">
+                <h2>HTML</h2>
+                <div class="progress-bar">
+                    <div class="html">
+                        <span class="c1">99%</span>
+                    </div>
+                </div>
+                <h2>CSS</h2>
+                <div class="progress-bar">
+                    <div class="html">
+                        <span class="c1">95%</span>
+                    </div>
+                </div>
+                <h2>Javascript</h2>
+                <div class="progress-bar">
+                    <div class="graphics">
+                        <span class="c1">70%</span>
+                    </div>
+                </div>
+
+                <h2>Angular</h2>
+                <div class="progress-bar">
+                    <div class="angular">
+                        <span class="c1">85%</span>
+                    </div>
+                </div>
+                <h2>Figma</h2>
+                <div class="progress-bar">
+                    <div class="figma">
+                        <span class="c1">80%</span>
+                    </div>
+                </div>
+                <h2>Photoshop</h2>
+                <div class="progress-bar">
+                    <div class="html">
+                        <span class="c1">95%</span>
+                    </div>
+                </div>
+                <h2>Illustrator</h2>
+                <div class="progress-bar">
+                    <div class="figma">
+                        <span class="c1">80%</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience section design -->
+    <section class="experience" id="service">
+        <div class="main-text">
+            <h2><span>My</span> Experience</h2>
+        </div>
+        <div class="experience-content">
+            <div class="box">
+                <div class="s-icons">
+                    <i class='bx bx-mobile-alt'></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>I will always be client-focused, creating user and customer experiences designed to have engaging user interfaces
+                    (UI) and deliver tangible business results.</p>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class='bx bx-code-alt'></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>I will be involved in everything related to building a web-based solution, whether it is a simple web page
+                    or a complex UI web application.
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class='bx bxl-sketch'></i>
+                </div>
+                <h3>Creative Design</h3>
+                <p>I have extra knowledge in packaging and merchandise design, signage, art installations, published materials,
+                    logos, and graphics art direction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <p>Some of my works</p>
+            <h2>
+                <span>Latest</span> Projects</h2>
+        </div>
+        <div class="portfolio-content">
+  
+            <div class="row">
+                <img src="images/travel-img.jpg">
+                <div class="layer">
+                    <h5>TOUR ER.</h5>
+                    <p>TourER. is a travel and tourism-related online service travel agency.</p>
+                    <div class="lang">
+                        <h3>HTML</h3>
+                        <a href="portfolio/travel/index.html" target="_blank">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                        <h3>CSS/JS</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="images/food-img.jpg">
+                <div class="layer">
+                    <h5>FOOD COURT</h5>
+                    <p>Food court is a business that prepares and serves food and drinks to customers.</p>
+                    <div class="lang">
+                        <h3>HTML</h3>
+                        <a href="portfolio/food/index.html" target="_blank">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                        <h3>CSS/JS</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <img src="images/football-img.jpg">
+              <div class="layer">
+                  <h5>FOLVES KC</h5>
+                  <p>Folves KC will help parents teach their children football skills at its training center. </p>
+                  <div class="lang">
+                      <h3>HTML</h3>
+                      <a href="portfolio/football/index.html" target="_blank">
+                          <i class='bx bx-link-external'></i>
+                      </a>
+                      <h3>CSS/JS</h3>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Footer section design -->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact
+                <span>Me</span>
+            </h2>
+            <h4>Feel free to reach out to me for any questions or opportunities!</h4>
+            <div class="list">
+                <p>
+                    <i class='bx bx-envelope'></i>tuwanriyas@aol.com</p>
+                <p>
+                    <i class='bx bxs-phone-call'></i>+94 75 0770039</p>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.facebook.com/tuwan.saleem"  target="_blank">
+                    <i class='bx bxl-facebook-square'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tuwan-riyas-67a60023/"  target="_blank">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+
+            </div>
+        </div>
+        <div class="contact-form">
+            <form name="submit-to-google-sheet">
+                <input type="Name" name="Name" placeholder="Your Name" required>
+                <input type="Email" name="Email" placeholder="Your Email Address" required>
+                <input type="Phone" name="Phone" placeholder="Your Mobile Number" required>
+                <textarea name="Message" id="" cols="35" rows="10" placeholder="How can help you" required></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </section>
+
+    <!-- End section design -->
+    <section class="end">
+        <div class="last-test">
+            <p>Copyright &copy; <span class="currentYear" id="currentYear"></span> Portfolio - Tuwan Riyas. All Rights Reserved.</p>
+        </div>
+        <div class="top">
+            <a href="#home">
+                <i class='bx bx-up-arrow-alt'></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Customer js link -->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
